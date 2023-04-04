@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url("../images/bg.jpg") no-repeat #000;
+	background-size: cover;
+	/* 行高是字体1.15倍 */
+	line-height: 1.15;
+}
+
+header {
+	position: relative;
+	height: 1.25rem;
+}
+
+header h1 {
+	font-size: 1.25rem;
+	color: #fff;
+	text-align: center;
+	line-height: 1rem;
+}
+
+.mainbox {
+	min-width: 1024px;
+	max-width: 1920px;
+	padding: 0.125rem 0.125rem 0;
+	display: flex;
+}
+
+.mainbox .column {
+	flex: 2;
+}
+
+.panel {
+	position: relative;
+	height: 37.5rem;
+	/* height: 3.875rem; */
+	border: 1px solid rgba(25, 186, 139, 0.17);
+	background: rgba(255, 255, 255, 0.04) url("../images/line.png");
+	padding: 0 0.1875rem 0.5rem;
+	margin-bottom: 0.1875rem;
+}
+
+.panel::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid #02a6b5;
+	border-left: 2px solid #02a6b5;
+}
+
+.panel::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid #02a6b5;
+	border-right: 2px solid #02a6b5;
+}
+
+.panel .panel-footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.panel .panel-footer::before {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-bottom: 2px solid #02a6b5;
+	border-left: 2px solid #02a6b5;
+}
+
+.panel .panel-footer::after {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-bottom: 2px solid #02a6b5;
+	border-right: 2px solid #02a6b5;
+}
+
+.panel .bar {
+	height: 500px;
+	border: 1px solid red;
+}
+
+.panel .chart1 {
+	height: 100%;
+}
+
+
+.panel .chart {
+	height: 50%;
+}
+
+
+.panel .chart10 {
+	height: 100%;
+}

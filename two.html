@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Magazine</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Architect Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript">
+			addEventListener('load', function() {
+				setTimeout(hideURLbar, 0)
+			}, false)
+
+			function hideURLbar() {
+				window.scrollTo(0, 1)
+			}
+		</script>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="css/xing.css">
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<link
+			href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+			rel='stylesheet' type='text/css'>
+		<!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script src="js/dark.js"></script>
+		<script src="js/roma.js"></script>
+		<script src="js/echarts.min.js"></script>
+		<script src="js/xing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$('.scroll').click(function(event) {
+					event.preventDefault()
+					$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000)
+				})
+			})
+		</script>
+		<!--start-smoth-scrolling-->
+	</head>
+	<body>
+		<!--header-->
+		<div class="header-top" id="home">
+			<div class="container">
+				<span class="menu"><img src="images/menu-icon.png" alt="" /></span>
+			</div>
+			<div class="top-nav">
+				<ul class="nav1">
+					<li><a href="one.html">首页</a></li>
+					<li><a href="two.html" class="active">评分排序</a></li>
+					<li><a href="three.html">价格排序</a></li>
+				</ul>
+				<!-- script-for-menu -->
+				<script>
+					$('span.menu').click(function() {
+						$('ul.nav1').slideToggle(300, function() {
+							// Animation complete.
+						})
+					})
+				</script>
+				<!-- /script-for-menu -->
+			</div>
+			<div class="social-icons">
+				<ul>
+					<li><a href="#"><span class="twit"> </span></a></li>
+					<li><a href="#"><span class="fb"> </span></a></li>
+					<li><a href="#"><span class="g"> </span></a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="search-box">
+			<div id="sb-search" class="sb-search">
+				<form>
+					<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search"
+						id="search">
+					<input class="sb-search-submit" type="submit" value="">
+					<span class="sb-icon-search"> </span>
+				</form>
+			</div>
+		</div>
+		<div class="header-info-right">
+			<div class="header cbp-spmenu-push">
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+					<a href="one.html">首页</a>
+					<a href="two.html" class="active">评分排序</a>
+					<a href="three.html">价格排序</a>
+				</nav>
+				<!--script-nav -->
+				<script>
+					$('span.menu').click(function() {
+						$('ul.navigatoin').slideToggle('300', function() {})
+					})
+				</script>
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$('.scroll').click(function(event) {
+							event.preventDefault()
+							$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000)
+						})
+					})
+				</script>
+				<div class="clearfix"> </div>
+				<!-- /script-nav -->
+				<div class="main">
+					<section class="buttonset">
+						<button id="showLeftPush"><img src="images/menu.png" /><span>菜单</span></button>
+					</section>
+				</div>
+				<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+				<script src="js/classie.js"></script>
+				<script>
+					var menuLeft = document.getElementById('cbp-spmenu-s1'),
+						showLeftPush = document.getElementById('showLeftPush'),
+						body = document.body
+
+					showLeftPush.onclick = function() {
+						classie.toggle(this, 'active')
+						classie.toggle(body, 'cbp-spmenu-push-toright')
+						classie.toggle(menuLeft, 'cbp-spmenu-open')
+						disableOther('showLeftPush')
+					}
+				</script>
+			</div>
+		</div>
+		</div>
+		<!--//header-->
+		<!--search-scripts-->
+		<script src="js/classie.js"></script>
+		<script src="js/uisearch.js"></script>
+		<script>
+			new UISearch(document.getElementById('sb-search'))
+		</script>
+		<!--//search-scripts-->
+		<!--Slider-Starts-Here-->
+		<script src="js/responsiveslides.min.js"></script>
+		<script>
+			// You can also use "$(window).load(function() {"
+			$(function() {
+				// Slideshow 4
+				$('#slider4').responsiveSlides({
+					auto: true,
+					pager: false,
+					nav: false,
+					speed: 500,
+					namespace: 'callbacks',
+					before: function() {
+						$('.events').append('<li>before event fired.</li>')
+					},
+					after: function() {
+						$('.events').append('<li>after event fired.</li>')
+					}
+				})
+
+			})
+		</script>
+
+
+		<div class="mainbox">
+			<div class="echartsxingheader">
+
+			</div>
+			<div class="column">
+				<div class="echartsxing">
+
+				</div>
+			</div>
+			<div class="column bin1">
+
+				<div class="echattsbinxing">
+
+				</div>
+			</div>
+			<div class="column">
+				<div class="echattsbinxing1">
+
+				</div>
+			</div>
+			<div class="column">
+				<div class="echattszhexian1">
+
+				</div>
+			</div>
+			<div class="column">
+				<div class="echattszhexian2">
+
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

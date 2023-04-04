@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Single</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Architect Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript">
+			addEventListener('load', function() {
+				setTimeout(hideURLbar, 0)
+			}, false)
+
+			function hideURLbar() {}
+		</script>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<script src="js/jquery-1.11.0.min.js"></script>
+
+		<link
+			href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+			rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="css/jia.css">
+		<script src="js/echarts.min.js"></script>
+		<script src="js/jia.js"></script>
+		<script src="js/quansheng.js"></script>
+		<!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$('.scroll').click(function(event) {
+					event.preventDefault()
+					$('html,body').animate({
+						scrollTop: $(this.hash).offset().top
+					}, 1000)
+				})
+			})
+		</script>
+		<!--start-smoth-scrolling-->
+	</head>
+	<body>
+		<!--header-->
+		<div class="header-top" id="home">
+			<div class="container">
+				<div class="header-logo">
+
+				</div>
+				<div class="top-nav">
+					<span class="menu"><img src="images/menu-icon.png" alt="" /></span>
+					<ul class="nav1">
+						<li><a href="one.html">首页</a></li>
+						<li><a href="two.html">评分排序</a></li>
+						<li><a href="three.html">价格排序</a></li>
+					</ul>
+					<!-- script-for-menu -->
+					<script>
+						$('span.menu').click(function() {
+							$('ul.nav1').slideToggle(300, function() {
+								// Animation complete.
+							})
+						})
+					</script>
+					<!-- /script-for-menu -->
+				</div>
+				<div class="social-icons">
+					<ul>
+						<li><a href="#"><span class="twit"> </span></a></li>
+						<li><a href="#"><span class="fb"> </span></a></li>
+						<li><a href="#"><span class="g"> </span></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="search-box">
+				<div id="sb-search" class="sb-search">
+					<form>
+						<input class="sb-search-input" placeholder="Enter your search term..." type="search"
+							name="search" id="search">
+						<input class="sb-search-submit" type="submit" value="">
+						<span class="sb-icon-search"> </span>
+					</form>
+				</div>
+			</div>
+			<div class="header-info-right">
+				<div class="header cbp-spmenu-push">
+					<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+						<a href="one.html">首页</a>
+						<a href="two.html">评分排序</a>
+						<a href="three.html">价格排序</a>
+					</nav>
+					<!--script-nav -->
+					<script>
+						$('span.menu').click(function() {
+							$('ul.navigatoin').slideToggle('300', function() {})
+						})
+					</script>
+					<script type="text/javascript">
+						jQuery(document).ready(function($) {
+							$('.scroll').click(function(event) {
+								event.preventDefault()
+								$('html,body').animate({
+									scrollTop: $(this.hash).offset().top
+								}, 1000)
+							})
+						})
+					</script>
+					<div class="clearfix"> </div>
+					<!-- /script-nav -->
+					<div class="main">
+						<section class="buttonset">
+							<button id="showLeftPush"><img src="images/menu.png" /><span>菜单</span></button>
+						</section>
+					</div>
+					<script src="js/classie.js"></script>
+					<script>
+						var menuLeft = document.getElementById('cbp-spmenu-s1'),
+							showLeftPush = document.getElementById('showLeftPush'),
+							body = document.body
+
+						showLeftPush.onclick = function() {
+							classie.toggle(this, 'active')
+							classie.toggle(body, 'cbp-spmenu-push-toright')
+							classie.toggle(menuLeft, 'cbp-spmenu-open')
+							disableOther('showLeftPush')
+						}
+					</script>
+				</div>
+			</div>
+		</div>
+		<script src="js/classie.js"></script>
+		<script src="js/uisearch.js"></script>
+		</div>
+		<header>
+			<h1>价格排序</h1>
+		</header>
+		<div class="mainbox">
+			<div class="column">
+				<div class="panel bar">
+					<div class="chart1">
+
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="panel bin">
+					<div class="chart">
+
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="panel xian">
+					<div class="chart10">
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+	</body>
+</html>

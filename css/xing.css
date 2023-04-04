@@ -1,0 +1,49 @@
+.mainbox {
+	display: flex;
+}
+
+.mainbox .column {
+	flex: 2;
+}
+
+.echartsxing {
+	height: 600px;
+	width: 500px;
+	/* position: absolute; */
+}
+
+
+.echattsbinxing {
+	height: 300px;
+	width: 430px;
+	position: absolute;
+	left: 499px;
+}
+
+.echattsbinxing1 {
+	height: 302px;
+	width: 430px;
+	position: absolute;
+	left: 499px;
+	top: 370px;
+}
+
+.echattszhexian1 {
+	height: 300px;
+	width: 590px;
+	position: absolute;
+	left: 928px;
+}
+
+.echattszhexian2 {
+	height: 300px;
+	width: 590px;
+	position: absolute;
+	left: 928px;
+	top: 374px;
+}
+
+
+.tianyun {
+	color: #fff;
+}
